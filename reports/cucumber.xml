@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="31.078" tests="3" skipped="0" failures="1" errors="0" timestamp="2025-11-28T11:16:13.684164400Z">
+<testcase classname="login functionality" name="To verify login functionality by entering valid credentials" time="11.645">
+<system-out><![CDATA[
+Given User has launcehd and browser and the application.....................passed
+When User enters valid Email................................................passed
+And User enters valid password..............................................passed
+And User clicks on login button.............................................passed
+Then User should be in dashboard page.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration functionality" name="To verify Registration functionality by enterung valid credentials" time="9.631">
+<failure type="java.lang.AssertionError" message="expected [Your Account Has Been Created!] but found [Register Account]">
+<![CDATA[java.lang.AssertionError: expected [Your Account Has Been Created!] but found [Register Account]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepdef_penta.TC_RF_001.user_should_be_registered(TC_RF_001.java:75)
+	at ✽.User should be registered(file:///C:/Users/Dell/Documents/workspace-spring-tools-for-eclipse-4.32.2.RELEASE/Penta_life/tutorialsnijaproject/registrationpenta.feature:16)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User has opened the browser and launched the application..............passed
+When User enters valid first name...........................................passed
+And User enters valid last name.............................................passed
+And User enters valid E-mail................................................passed
+And User enters Telephone...................................................passed
+And User enters password....................................................passed
+And User enters password confirm............................................passed
+And User clicks on radio button no..........................................passed
+And User clicks on privacy policy checkbox..................................passed
+And User clicks on continue button..........................................passed
+Then User should be registered..............................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify search functionality" time="9.517">
+<system-out><![CDATA[
+Given User has logged inn...................................................passed
+When User logs in...........................................................passed
+And User enters a valid product name in the search boxx.....................passed
+And User clicks on search buttonss..........................................passed
+Then User should see the searched product displayedd........................passed
+]]></system-out>
+</testcase>
+</testsuite>
